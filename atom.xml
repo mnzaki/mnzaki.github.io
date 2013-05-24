@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[The MNZaki Spot]]></title>
+  <link href="http://mnzaki.github.io/atom.xml" rel="self"/>
+  <link href="http://mnzaki.github.io/"/>
+  <updated>2013-05-24T15:24:08+02:00</updated>
+  <id>http://mnzaki.github.io/</id>
+  <author>
+    <name><![CDATA[Mina Nagy Zaki]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>

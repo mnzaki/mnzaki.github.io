@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<!--
+
+Hey there curious traveller. Have you been patient lately?
+Change is the only constant. Still, everything is a remix.
+Pattern detection is in our  Nature, the mother of change,
+nature. Difference and same- abhors a vacuum, accepts not
+ness beget meaning, purpose, stillness, only change. Is it not
+and repetition anchors their strange, to step out of line
+everlasting dance. Why dare  and refuse to change? Will it
+question the universality of feel deranged, almost insane,
+of the one true constant yet if all futures were the same?
+to be explained? To be repeated is to remain. To break out
+of the pattern is to change, and ironically, still, again,
+to accept that the the same-
+ness is the constant change.
+
+Let's get real for a moment,
+let's talk about the visuals
+
+What are you looking at/for?
+The image takes time to form
+fully
+as the space reconfigures itself into the new pattern,
+slowly
+revealing what's next through
+the gaps in what was before .
+                          .  .
+Does it ever complete? No.    .
+As soon as it fully forms,    .
+it instantly begins morphing..:
+into the next pattern. I suppose I could have also said
+yes, for an instant, a fleeting instant, it is complete
+but to capture the instant is a humanly impossible feat
+
+The patterns themselves originate from the
+same
+process of trying to compute minute change
+limited
+by the precision of the computing paradigm.
+
+In a very real, mathematical, way, ALL the possible patterns are
+- predetermined
+- computable (in the formal sense)
+- and a byproduct of an algorithm that was not designed for this
+                                                          at all
+And yet these patterns are, at a higher level, subjectively
+- unpredictable
+- do not repeat precisely
+- and can be mixed into a never ending stream of variations
+
+So who are you and what are you looking at/for?
+May your journey be full of happy accidents and meaningful change!
+
+-->
+  <head>
+    <title>Patience Test</title>
+    <style>
+      body, canvas, html {
+        min-height: fit-content;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+      canvas {
+        position: absolute;
+        pointer-events: none;
+        z-index: -42;
+      }
+      pre {
+        position: relative;
+        inset: 0;
+        width: fit-content;
+        height: fit-content;
+        padding: 20px;
+        margin: 1vw auto;
+        background: #000000b0;
+        border-radius: 20px;
+        color: #ddd;
+        overflow: hidden;
+        user-select: none;
+        opacity: 1;
+        transform: scale(1);
+        transition-property: opacity, transform, border-radius;
+        transition-timing-function: cubic-bezier(.35,.81,.77,-0.67);
+        transition-duration: 20s;
+      }
+      pre:empty {
+        opacity: 0;
+        transform: scale(0);
+        border-radius: 100%;
+      }
+      @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+        pre {
+          color: #fff;
+          background: #00000070;
+          -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <pre></pre>
+    <canvas></canvas>
+    <script src="./fpu_error_field.js"></script>
+    <script>
+      document.addEventListener('click',  () => {
+        const show = document.querySelector('pre');
+        setTimeout(() => show.onclick = show.remove, 20000);
+        show.textContent =
+          document.documentElement.outerHTML.split('--')[1].trim();
+      }, { once: true });
+    </script>
+  </body>
+</html>
